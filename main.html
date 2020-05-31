@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Igor Christofer Eisenhut</title>
+
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+</head>
+
+<body onload="return ajustarComponentes();" onresize="return ajustarComponentes();">
+    <div class="row p-0 m-0">
+        <div class="col-lg-2 p-0 m-0">
+            <nav id="menuPrincipal" class="nav navbar-expand-lg nav-tabs w-100 flex-column">
+                <div id="menuEspacamento" class="w-100 m-0 p-2 px-4">
+                    <a id="menuCabecalho" class="w-100 navbar-brand text-light p-0" href="#">
+                        <img id="menuImg" class="w-100 h-auto" src="img/tdc.png" alt="Igor Christofer Eisenhut">
+                        <h4 id="menuTitulo" class="font-italic">Igor Christofer Eisenhut</h4>
+                    </a>
+                    <button class="navbar-toggler float-right" type="button" data-toggle="collapse"
+                        data-target="#menuConteudo">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div id="menuConteudo" class="collapse navbar-collapse">
+                    <div class="navbar-nav flex-column">
+                        <a href="#sobreMim" class="nav-item nav-link text-primary p-4">
+                            <svg class="bi bi-person-lines-fill" width="1em" height="1em" viewBox="0 0 16 16"
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm7 1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm2 9a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z" />
+                            </svg>
+                            Sobre mim
+                        </a>
+                        <a href="#experienciaProfissional" class="nav-item nav-link text-primary p-4">
+                            <svg class="bi bi-newspaper" width="1em" height="1em" viewBox="0 0 16 16"
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M0 2A1.5 1.5 0 0 1 1.5.5h11A1.5 1.5 0 0 1 14 2v12a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 0 14V2zm1.5-.5A.5.5 0 0 0 1 2v12a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 .5-.5V2a.5.5 0 0 0-.5-.5h-11z" />
+                                <path fill-rule="evenodd"
+                                    d="M15.5 3a.5.5 0 0 1 .5.5V14a1.5 1.5 0 0 1-1.5 1.5h-3v-1h3a.5.5 0 0 0 .5-.5V3.5a.5.5 0 0 1 .5-.5z" />
+                                <path
+                                    d="M2 3h10v2H2V3zm0 3h4v3H2V6zm0 4h4v1H2v-1zm0 2h4v1H2v-1zm5-6h2v1H7V6zm3 0h2v1h-2V6zM7 8h2v1H7V8zm3 0h2v1h-2V8zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1z" />
+                            </svg>
+                            Experiência profissional
+                        </a>
+                        <a href="#" class="nav-item nav-link dropdown-toggle text-primary p-4" data-toggle="dropdown"
+                            role="button">
+                            <svg class="bi bi-book-half" width="1em" height="1em" viewBox="0 0 16 16"
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M12.786 1.072C11.188.752 9.084.71 7.646 2.146A.5.5 0 0 0 7.5 2.5v11a.5.5 0 0 0 .854.354c.843-.844 2.115-1.059 3.47-.92 1.344.14 2.66.617 3.452 1.013A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.276-.447L15.5 2.5l.224-.447-.002-.001-.004-.002-.013-.006-.047-.023a12.582 12.582 0 0 0-.799-.34 12.96 12.96 0 0 0-2.073-.609zM15 2.82v9.908c-.846-.343-1.944-.672-3.074-.788-1.143-.118-2.387-.023-3.426.56V2.718c1.063-.929 2.631-.956 4.09-.664A11.956 11.956 0 0 1 15 2.82z" />
+                                <path fill-rule="evenodd"
+                                    d="M3.214 1.072C4.813.752 6.916.71 8.354 2.146A.5.5 0 0 1 8.5 2.5v11a.5.5 0 0 1-.854.354c-.843-.844-2.115-1.059-3.47-.92-1.344.14-2.66.617-3.452 1.013A.5.5 0 0 1 0 13.5v-11a.5.5 0 0 1 .276-.447L.5 2.5l-.224-.447.002-.001.004-.002.013-.006a5.017 5.017 0 0 1 .22-.103 12.958 12.958 0 0 1 2.7-.869z" />
+                            </svg>
+                            Cursos
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="#cursosPresenciais" class="dropdown-item text-primary p-4">Presenciais</a>
+                            <a href="#cursosADistancia" class="dropdown-item text-primary p-4">À distância</a>
+                        </div>
+                        <a href="#projetosPessoais" class="nav-item nav-link text-primary p-4">
+                            <svg class="bi bi-tools" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M0 1l1-1 3.081 2.2a1 1 0 0 1 .419.815v.07a1 1 0 0 0 .293.708L10.5 9.5l.914-.305a1 1 0 0 1 1.023.242l3.356 3.356a1 1 0 0 1 0 1.414l-1.586 1.586a1 1 0 0 1-1.414 0l-3.356-3.356a1 1 0 0 1-.242-1.023L9.5 10.5 3.793 4.793a1 1 0 0 0-.707-.293h-.071a1 1 0 0 1-.814-.419L0 1zm11.354 9.646a.5.5 0 0 0-.708.708l3 3a.5.5 0 0 0 .708-.708l-3-3z" />
+                                <path fill-rule="evenodd"
+                                    d="M15.898 2.223a3.003 3.003 0 0 1-3.679 3.674L5.878 12.15a3 3 0 1 1-2.027-2.027l6.252-6.341A3 3 0 0 1 13.778.1l-2.142 2.142L12 4l1.757.364 2.141-2.141zm-13.37 9.019L3.001 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026z" />
+                            </svg>
+                            Projetos pessoais
+                        </a>
+                        <a href="#contato" class="nav-item nav-link text-primary p-4">
+                            <svg class="bi bi-envelope-fill" width="1em" height="1em" viewBox="0 0 16 16"
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
+                            </svg>
+                            Contato
+                        </a>
+                        <a href="#" class="nav-item nav-link text-primary p-4">
+                            <svg class="bi bi-arrow-90deg-up" width="1em" height="1em" viewBox="0 0 16 16"
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M2.646 6.854a.5.5 0 0 0 .708 0L6 4.207l2.646 2.647a.5.5 0 1 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 0 0 0 .708z" />
+                                <path fill-rule="evenodd"
+                                    d="M6 3.5a.5.5 0 0 0-.5.5v6.5A2.5 2.5 0 0 0 8 13h5.5a.5.5 0 0 0 0-1H8a1.5 1.5 0 0 1-1.5-1.5V4a.5.5 0 0 0-.5-.5z" />
+                            </svg>
+                            Voltar ao topo
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="col-lg p-0 m-0">
+            <header class="container-fluid p-1 text-light bg-dark">
+                <h4 class="text-center font-italic">Igor Christofer Eisenhut</h4>
+            </header>
+            <main class="m-0 p-3">
+                <section id="sobreMim" class="card w-75 mx-auto my-4">
+                    <div class="card-body">
+                        <h3 class="card-title">Sobre mim</h3>
+                        <p class="card-text">
+                            Sou uma pessoa muito comprometida com a função que desempenho. Como programador, sempre
+                            gostei de
+                            estudar, de buscar novos conhecimentos
+                            ou aprimorar os que já detenho. Possuo dezenas de cursos realizados na
+                            plataforma online Alura, e pretendo, este ano (2020),
+                            obter a certificação 70-483: Programming in C#, da Microsoft, para a qual já
+                            estou estudando há vários meses e concluí recentemente um curso preparatório.
+                        </p>
+                    </div>
+                </section>
+                <section id="experienciaProfissional" class="card w-75 mx-auto my-4">
+                    <div class="card-body">
+                        <h3 class="card-title mb-5">Experiência Profissional</h3>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-2">
+                                    <div class="h-100 w-100">
+                                        <img class="img-fluid mx-auto d-block" src="img/benner.png"
+                                            alt="Benner Sistemas SA">
+                                    </div>
+                                </div>
+                                <div class="col-lg">
+                                    <h4 class="card-text">Benner Sistemas SA, Programador Júnior</h4>
+                                    <p class="card-text">
+                                        Na função desde outubro de 2019, atuando principalmente no
+                                        desenvolvimento de implementações para novas funcionalidades
+                                        do sistema e projetos faturados.
+                                    </p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-2">
+                                    <div class="h-100 w-100">
+                                        <img class="img-fluid mx-auto d-block" src="img/benner.png"
+                                            alt="Benner Sistemas SA">
+                                    </div>
+                                </div>
+                                <div class="col-lg">
+                                    <h4 class="card-text">Benner Sistemas SA, Programador Aprendiz</h4>
+                                    <p class="card-text">
+                                        Atuação entre novembro de 2018 e setembro de 2019, onde tive
+                                        foco na resolução de erros existentes no sistema (manutenção
+                                        das versões).
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="cursos" class="card w-75 mx-auto my-4">
+                    <div class="card-body">
+                        <h3 class="card-title">Cursos</h3>
+                        <div id="cursosPresenciais">
+                            <div class="card-body">
+                                <h4 class="card-subtitle text-muted mb-4">Presenciais</h4>
+                                <div id="carrosselCursosPresenciais" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carrosselCursosPresenciais" data-slide-to="0" class="active">
+                                        </li>
+                                        <li data-target="#carrosselCursosPresenciais" data-slide-to="1"></li>
+                                        <li data-target="#carrosselCursosPresenciais" data-slide-to="2"></li>
+                                        <li data-target="#carrosselCursosPresenciais" data-slide-to="3"></li>
+                                        <li data-target="#carrosselCursosPresenciais" data-slide-to="4"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="d-block w-100" src="img/furb.jpg" alt="Furb">
+                                            <div class="text-light bg-dark carousel-caption d-none d-md-block">
+                                                <h5>Bacharelado em Ciência da Computação</h5>
+                                                <p>2019 - 2023</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100" src="img/microsoft.jpeg" alt="Microsoft">
+                                            <div class="text-light bg-dark carousel-caption d-none d-md-block">
+                                                <h5>20483 - Programming in C#</h5>
+                                                <p>2020</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100" src="img/entra21.jpeg" alt="Entra21">
+                                            <div class="text-light bg-dark carousel-caption d-none d-md-block">
+                                                <h5>Formação em Desenvolvimento C#.NET</h5>
+                                                <p>2018</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100" src="img/proway.jpeg" alt="ProWay">
+                                            <div class="text-light bg-dark carousel-caption d-none d-md-block">
+                                                <h5>Desenvolvendo em Java</h5>
+                                                <p>2018</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100" src="img/senai.jpeg" alt="Senai">
+                                            <div class="text-light bg-dark carousel-caption d-none d-md-block">
+                                                <h5>Aprendizagem Industrial em Informática e Programador de Computador
+                                                </h5>
+                                                <p>2015 e 2016</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carrosselCursosPresenciais" role="button"
+                                        data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carrosselCursosPresenciais" role="button"
+                                        data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div id="cursosADistancia">
+                            <div class="card-body">
+                                <h4 class="card-subtitle text-muted mb-4">À Distância</h4>
+                                <div class="accordion" id="accordionExample">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h2 class="mb-0">
+                                                <button class="btn btn-link btn-block collapsed" type="button"
+                                                    data-toggle="collapse" data-target="#collapseOne"
+                                                    aria-expanded="true" aria-controls="collapseOne">
+                                                    Formação .NET
+                                                </button>
+                                            </h2>
+                                        </div>
+                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                            data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <h5>Alura<span class="float-right text-muted">mai. 2020</span></h5>
+                                                <hr>
+                                                <ul>
+                                                    <li>ASP.NET Core parte 2: Um e-Commerce com MVC e EF Core</li>
+                                                    <li>ASP.NET Core parte 1: Um e-Commerce com MVC e EF Core</li>
+                                                    <li>Asp.NET Core: Uma webapp usando o padrão MVC</li>
+                                                    <li>Entity Framework Core: Banco de dados de forma eficiente</li>
+                                                    <li>C# Parte 9: Entrada e saída (I/O) com streams</li>
+                                                    <li>C# parte 8: List&ltT&gt, lambda, linq</li>
+                                                    <li>C# parte 7: Array e tipos genéricos</li>
+                                                    <li>C# parte 6: Strings, expressões regulares e a classe Object</li>
+                                                    <li>C# parte 5: Bibliotecas DLLs, documentação e usando o NuGet</li>
+                                                    <li>C# parte 4: Entendendo exceções</li>
+                                                    <li>C# parte 3: Entendendo herança e interface</li>
+                                                    <li>C# parte 2: Introdução à Orientação a Objetos</li>
+                                                    <li>C# parte 1: Primeiros passos</li>
+                                                </ul>
+                                                <a class="btn btn-primary"
+                                                    href="https://cursos.alura.com.br/degree/certificate/d4a2e607-ed85-40e7-9102-5e3ebe17c231">
+                                                    Certificado
+                                                    <svg class="bi bi-award-fill" width="1em" height="1em"
+                                                        viewBox="0 0 16 16" fill="currentColor"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M8 0l1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864 8 0z" />
+                                                        <path
+                                                            d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z" />
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingTwo">
+                                            <h2 class="mb-0">
+                                                <button class="btn btn-link btn-block" type="button"
+                                                    data-toggle="collapse" data-target="#collapseTwo"
+                                                    aria-expanded="false" aria-controls="collapseTwo">
+                                                    Formação Certificação C# Programming
+                                                </button>
+                                            </h2>
+                                        </div>
+                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                            data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <h5>Alura<span class="float-right text-muted">mai. 2020</span></h5>
+                                                <hr>
+                                                <ul>
+                                                    <li>Certificação C# Programming parte 12: Validar Segurança</li>
+                                                    <li>Certificação C# Programming parte 11: Multithreading</li>
+                                                    <li>Certificação C# Programming parte 10: Reflection</li>
+                                                    <li>Certificação C# Programming parte 9: Depurar Aplicativos</li>
+                                                    <li>Certificação C# Programming parte 8: Entrada e Saída de Dados
+                                                    </li>
+                                                    <li>Certificação C# Programming parte 7: Eventos e LINQ</li>
+                                                    <li>Certificação C# Programming parte 6: Coleções, XML e JSON</li>
+                                                    <li>Certificação C# Programming parte 5: Strings e Ciclo de Vida de
+                                                        Objetos</li>
+                                                    <li>Certificação C# Programming parte 4: Fluxo de programa e
+                                                        exceções</li>
+                                                    <li>Certificação C# Programming parte 3: Encapsulamento e Hierarquia
+                                                        de Classes</li>
+                                                    <li>Certificação C# Programming parte 2: Consumir tipos</li>
+                                                    <li>Certificação C# Programming parte 1: Criar tipos</li>
+                                                </ul>
+                                                <a class="btn btn-primary"
+                                                    href="https://cursos.alura.com.br/degree/certificate/ec9729d8-7d62-4596-a037-2ff493e59f30">
+                                                    Certificado
+                                                    <svg class="bi bi-award-fill" width="1em" height="1em"
+                                                        viewBox="0 0 16 16" fill="currentColor"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M8 0l1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864 8 0z" />
+                                                        <path
+                                                            d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z" />
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="projetosPessoais" class="card w-75 mx-auto my-4">
+                    <div class="card-body">
+                        <h3 class="card-title">Projetos Pessoais</h3>
+                        <div class="row">
+                            <div class="col-lg mt-3">
+                                <div class="card">
+                                    <img class="card-img-top" src="img/arduino.jpg" alt="Arduino">
+                                    <div class="card-body">
+                                        <h5 class="card-subtitle">Thermometer</h5>
+                                        <p class="card-text">
+                                            Projeto realizado com arduino, utilizando o sensor DHT-11 para
+                                            medição de temperatura.
+                                        </p>
+                                        Linguagens:
+                                        <span class="badge badge-primary badge-pill">C#</span>
+                                        <span class="badge badge-info badge-pill">C++</span>
+                                        <a href="https://github.com/Aizenrut/Thermometer"
+                                            class="btn btn-primary float-right">Acessar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg mt-3">
+                                <div class="card">
+                                    <img class="card-img-top" src="img/whatsapp.png" alt="Bot">
+                                    <div class="card-body">
+                                        <h5 class="card-subtitle">Bot</h5>
+                                        <p class="card-text">
+                                            Bot criado para atuar no WhatsApp, enviando mensagens automáticas
+                                            para grupos e pessoas. Me baseei nos bots do Discord, uma vez que a
+                                            intenção foi criar algo informativo aos receptores das mensagens.
+                                        </p>
+                                        Linguagem:
+                                        <span class="badge badge-primary badge-pill">C#</span>
+                                        <a href="https://github.com/Aizenrut/bot"
+                                            class="btn btn-primary float-right">Acessar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg mt-3">
+                                <div class="card">
+                                    <img class="card-img-top" src="img/beep.png" alt="Beep">
+                                    <div class="card-body">
+                                        <h5 class="card-subtitle">Beep</h5>
+                                        <p class="card-text">
+                                            Projeto para explorar o método Beep(), da classe Console.
+                                            Neste programa o usuário consegue informar uma frequência e duração
+                                            para que a placa mãe fique beepando.
+                                        </p>
+                                        Linguagem:
+                                        <span class="badge badge-primary badge-pill">C#</span>
+                                        <a href="https://github.com/Aizenrut/Beep"
+                                            class="btn btn-primary float-right">Acessar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="contato" class="card w-75 mx-auto my-4">
+                    <div class="card-body">
+                        <h3 class="card-title">Contato</h3>
+                        <form method="POST" onsubmit="return enviarMensagemContato();">
+                            <div class="row">
+                                <div class="col-lg form-group">
+                                    <label for="nomeContato">Nome:</label>
+                                    <input class="form-control" type="text" name="nomeContato" id="nomeContato"
+                                        placeholder="Nome" required>
+                                </div>
+                                <div class="col-lg form-group">
+                                    <label for="sobrenomeContato">Sobrenome:</label>
+                                    <input class="form-control" type="text" name="sobrenomeContato"
+                                        id="sobrenomeContato" placeholder="Sobrenome" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="emailContato">E-mail:</label>
+                                <input class="form-control" type="email" name="emailContato" id="emailContato"
+                                    placeholder="E-mail" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="assuntoContato">Assunto:</label>
+                                <input class="form-control" type="text" name="assuntoContato" id="assuntoContato"
+                                    placeholder="Assunto" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="mensagemContato">Mensagem:</label>
+                                <textarea class="form-control" name="mensagemContato" id="mensagemContato" rows="5"
+                                    placeholder="Mensagem" required></textarea>
+                            </div>
+                            <input class="btn btn-primary float-right" type="submit" name="enviarContato"
+                                id="enviarContato" value="Enviar">
+                        </form>
+                    </div>
+                </section>
+            </main>
+            <footer class="bg-dark font-weight-bold p-5 text-center">
+                <div class="row">
+                    <div class="col">
+                        <a class="linkContato text-white text-decoration-none"
+                            href="https://www.linkedin.com/in/igor-christofer-eisenhut/">
+                            <img src="img/linkedin.png" alt="LinkedIn">
+                            LinkedIn
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a class="linkContato text-white text-decoration-none"
+                            href="https://cursos.alura.com.br/user/igor-eisenhut">
+                            <img src="img/alura.png" alt="Alura">
+                            Alura
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a class="linkContato text-white text-decoration-none" href="https://github.com/Aizenrut">
+                            <img src="img/git.png" alt="GitHub">
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <a class="linkContato text-white text-decoration-none"
+                            href="https://www.facebook.com/igor.eisenhut">
+                            <img src="img/facebook.png" alt="Facebook">
+                            Facebook
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a class="linkContato text-white text-decoration-none"
+                            href="https://www.instagram.com/igor_eisenhut">
+                            <img src="img/instagram.png" alt="Instagram">
+                            Instagram
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a class="linkContato text-white text-decoration-none" href="https://twitter.com/aizenrut">
+                            <img src="img/twitter.png" alt="Twitter">
+                            Twitter
+                        </a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
